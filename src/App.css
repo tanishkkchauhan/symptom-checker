@@ -1,0 +1,117 @@
+/* src/App.css */
+:root {
+  --neon-pink: #ff36ab;
+  --neon-purple: #9b4bff;
+  --neon-blue: #3385ff;
+  --dark-bg: #1a1a2e;
+  --card-bg: #2a2a40;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, var(--dark-bg) 0%, #2a1a4a 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  color: white;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.app-container {
+  margin-top: 2rem !important;
+  margin-bottom: 2rem !important;
+}
+
+/* Glowing text effect */
+.glow-text {
+  text-shadow: 0 0 10px var(--neon-pink),
+               0 0 20px var(--neon-purple);
+}
+
+/* Custom Paper styling */
+.custom-paper {
+  background-color: var(--card-bg) !important;
+  border: 2px solid rgba(255, 54, 171, 0.2);
+  backdrop-filter: blur(10px);
+  color: white !important;
+}
+
+/* Custom TextField styling */
+.custom-textfield .MuiOutlinedInput-root {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.custom-textfield .MuiOutlinedInput-root:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.custom-textfield .MuiOutlinedInput-notchedOutline {
+  border-color: rgba(255, 54, 171, 0.3);
+}
+
+.custom-textfield .MuiInputLabel-root {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.custom-textfield .MuiOutlinedInput-input {
+  color: white;
+}
+
+/* Custom Button styling */
+.translate-button {
+  background: linear-gradient(45deg, var(--neon-pink), var(--neon-purple)) !important;
+  border-radius: 12px !important;
+  font-weight: 600 !important;
+  text-transform: none !important;
+  font-size: 1.1rem !important;
+  padding: 10px 30px !important;
+  transition: all 0.3s ease !important;
+  box-shadow: 0 4px 20px rgba(255, 54, 171, 0.3) !important;
+}
+
+.translate-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 25px rgba(255, 54, 171, 0.4) !important;
+}
+
+/* Translation result styling */
+.translation-result {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+  border-radius: 12px !important;
+  border: 1px solid rgba(255, 54, 171, 0.2) !important;
+}
+
+/* Maintain markdown styles but with dark theme */
+.markdown-body {
+  color: white;
+  background-color: transparent;
+}
+
+.markdown-body code {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--neon-pink);
+}
+
+.markdown-body pre {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, var(--neon-pink), var(--neon-purple));
+  border-radius: 4px;
+}
