@@ -153,6 +153,4 @@ Contributions are welcome! Please feel free to submit a Pull Request or open an 
 5.  Open a Pull Request
 
 
-## Creator Credit
 
-Built By Ram Bapat - [LinkedIn](www.linkedin.com/in/ram-bapat-barrsum-diamos)
